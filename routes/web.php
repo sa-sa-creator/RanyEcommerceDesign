@@ -23,6 +23,12 @@ Route::get('/shopping_carts', function () {
     ]);
 });
 
+Route::get('/customer_profile', function () {
+    return Inertia::render('CustomerProfile',[
+
+    ]);
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),

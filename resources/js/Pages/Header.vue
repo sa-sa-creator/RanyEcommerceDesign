@@ -54,8 +54,47 @@
             </div>
 
             <div class="flex gap-0 lg:flex 2xl:ml-16">
+                <button
+                    type="button"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom"
+                ></button>
                 <a
                     href="#"
+                    class="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-500 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                        />
+                    </svg>
+                    <div
+                        class="absolute inline-flex items-center justify-center w-auto px-1 text-xs font-bold text-white bg-red-500 border-2 border-red-500 rounded-full lg:top-6 lg:end-40 dark:border-gray-900 2xl:end-auto"
+                    >
+                        0
+                    </div>
+
+                    <span
+                        class="hidden text-xs font-semibold text-white sm:block"
+                        >Cart</span
+                    >
+                </a>
+                <button
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom"
                     class="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-500 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24"
                 >
                     <svg
@@ -77,44 +116,53 @@
                         class="hidden text-xs font-semibold text-white sm:block"
                         >Account</span
                     >
-                </a>
-                <button
-                    type="button"
-                    id="user-menu-button"
-                    aria-expanded="false"
-                    data-dropdown-toggle="user-dropdown"
-                    data-dropdown-placement="bottom"
-                ></button>
-
-                <a
-                    href="#"
-                    class="flex h-12 w-12 flex-col items-center justify-center gap-1.5 transition duration-100 hover:bg-gray-500 active:bg-gray-200 sm:h-20 sm:w-20 md:h-24 md:w-24"
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                    class="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow bg-slate-100 dark:bg-gray-700 dark:divide-gray-600"
+                    id="user-dropdown"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-6 h-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                        />
-                    </svg>
-                    <div
-                        class="absolute inline-flex items-center justify-center w-auto px-1 text-xs font-bold text-white bg-red-500 border-2 border-red-500 rounded-full lg:top-6 lg:end-16 dark:border-gray-900 2xl:end-auto"
-                    >
-                        0
+                    <div class="px-4 py-3">
+                        <span
+                            class="block text-sm text-gray-900 dark:text-white"
+                            >Bonnie Green</span
+                        >
+                        <span
+                            class="block text-sm text-gray-500 truncate dark:text-gray-400"
+                            >name@flowbite.com</span
+                        >
                     </div>
-
-                    <span
-                        class="hidden text-xs font-semibold text-white sm:block"
-                        >Cart</span
-                    >
-                </a>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                >Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                >History</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                >Earnings</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                >Sign out</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- buttons - end -->

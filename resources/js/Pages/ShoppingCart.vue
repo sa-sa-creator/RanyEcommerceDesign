@@ -389,35 +389,13 @@ onMounted(() => {
                 <form class="grid max-w-screen-md gap-4 mx-auto">
                     <div class="sm:col-span-2">
                         <label
-                            for="subject"
-                            class="inline-block mb-2 text-sm text-gray-800 sm:text-base"
-                            >Name</label
-                        >
-                        <input
-                            name="subject"
-                            class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none bg-gray-50 ring-yellow-300 focus:ring border-stone-200"
-                        />
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label
-                            for="subject"
-                            class="inline-block mb-2 text-sm text-gray-800 sm:text-base"
-                            >Phone Number</label
-                        >
-                        <input
-                            name="subject"
-                            class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none bg-gray-50 ring-yellow-300 focus:ring border-stone-200"
-                        />
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label
                             for="message"
                             class="inline-block mb-2 text-sm text-gray-800 sm:text-base"
-                            >Address</label
+                            >Billing Address</label
                         >
                         <textarea
                             name="message"
-                            class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none h-28 bg-gray-50 ring-yellow-300 focus:ring border-stone-200"
+                            class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none h-28 bg-gray-50 border-stone-200 focus:ring-yellow-500 focus:border-yellow-500"
                         ></textarea>
                     </div>
 

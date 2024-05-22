@@ -21,8 +21,8 @@ onMounted(() => {
         <!-- hero - end -->
 
         <!-- product-grid - start -->
-        <div class="py-6 bg-white sm:py-8 lg:pb-12">
-            <div class="px-4 mx-auto max-w-screen-2xl md:px-8">
+        <div class="py-6 text-center bg-white sm:py-8 lg:pb-12">
+            <div class="px-4 mx-auto max-w-screen-2xl md:px-8 text-start">
                 <h6 class="pb-10 text-2xl font-bold">All Products</h6>
                 <div
                     class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4"
@@ -186,8 +186,64 @@ onMounted(() => {
                     <!-- product - end -->
                 </div>
             </div>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex pt-12 -space-x-px text-sm">
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 ms-0 border-e-0 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >Previous</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >1</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >2</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            aria-current="page"
+                            class="flex items-center justify-center h-8 px-3 text-blue-600 border border-gray-100 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                            >3</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >4</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >5</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-100 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >Next</a
+                        >
+                    </li>
+                </ul>
+            </nav>
         </div>
         <!-- product-grid - end -->
+
         <Footer></Footer>
     </div>
 </template>
